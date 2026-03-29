@@ -16,10 +16,11 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop back-end projects,<br className="sm:block hidden" />
             user interfaces and web applications.
+            {/* Add other text here later */}
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
     </section>
   )
 }
