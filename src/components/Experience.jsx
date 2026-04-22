@@ -1,5 +1,5 @@
 import React from 'react'
-import { VerticvalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
@@ -21,8 +21,9 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        {/* Loop through the experiences array and create a VerticalTimelineElement for each experience */}
-        {experiences.map((experience, index) => (
+        <VerticalTimeline lineColor="#fff">
+          {/* Loop through the experiences array and create a VerticalTimelineElement for each experience */}
+          {experiences.map((experience, index) => (
             <VerticalTimelineElement
               contentStyle={{ background: '#1d1836', color: '#fff' }}
               key={index}
@@ -46,6 +47,7 @@ const Experience = () => {
               </ul>
             </VerticalTimelineElement>
           ))}
+        </VerticalTimeline>
       </div>
 
     </>
