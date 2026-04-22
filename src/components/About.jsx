@@ -6,13 +6,17 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+import { sectionWrapper } from '../hoc';
+
 const About = () => {
   return (
     //React fragment, used to group multiple elements without adding extra nodes to the DOM
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText}`}
+        >Introduction</p>
+        <h2 className={`${styles.sectionHeadText} mt-4`} //Having issues with appliting margin to the heading, so added it here instead of the styles file
+        >Overview.</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
@@ -35,4 +39,4 @@ const About = () => {
   )
 }
 
-export default About
+export default sectionWrapper(About, "about");
