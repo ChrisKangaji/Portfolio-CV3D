@@ -10,10 +10,10 @@ const SkillCard = ({ index, title, subDescription1, subDescription2, subDescript
   return (
     <motion.div
       variants={fadeIn("", "spring", 0.5 * index, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+      className="bg-black-200 p-10 rounded-3xl w-full"
       // key={skill.title}
     >
-      <p className="text-white font-black text-[48px]">{title}</p>
+      <p className="text-white font-black text-[34px] sm:text-[42px] lg:text-[48px] leading-[1.05] break-words">{title}</p>
       <p className="mt-5 text-secondary text-[18px]">{subDescription1}</p>
       <p className="mt-5 text-secondary text-[18px]">{subDescription2}</p>
       <p className="mt-5 text-secondary text-[18px]">{subDescription3}</p>
@@ -26,14 +26,14 @@ const SkillCard = ({ index, title, subDescription1, subDescription2, subDescript
 const Skills = () => {
   return (
     <>
-      <div className="mt-12 bg-black-100 rounded-[20px]">
-        <div className={`${styles.padding} bg-tertiary rounded-2xl`}>
+      <div className="mt-6 bg-black-100 rounded-[20px]">
+        <div className={`${styles.padding} rounded-2xl`}>
           <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>What I can do</p>
-            <h2 className={`${styles.sectionHeadText} mt-4`}>Skills.</h2>
+            <p className={styles.sectionSubText}>Some of my proficiencies</p>
+            <h2 className={`${styles.sectionHeadText} mt-4`}>Competence.</h2>
           </motion.div>
         </div>
-        <div className={`${styles.paddingX} mt-10 pb-14 flex flex-wrap gap-10`}>
+        <div className={`${styles.paddingX} pb-14 grid [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))] gap-10`}>
           {skills.map((skill, index) => (
             <SkillCard key={skill.title} index={index} {...skill} />
           ))}

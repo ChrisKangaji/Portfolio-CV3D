@@ -172,7 +172,7 @@ const experiences = [
 const skills = [
   {
     title:
-      "Technical Services",
+      "Technical Competence",
     description: 
       "Technical Expertise in Software Development, System Design, and Agile Methodologies",
     subDescription1: 
@@ -188,7 +188,7 @@ const skills = [
   },
   {
     title:
-      "Professional and Interpersonal Services",
+      "Professional Competence",
     description: 
       "Strong Interpersonal and Professional Skills for Effective Collaboration, Communication, and Results-Driven Performance.",
     subDescription1: 
