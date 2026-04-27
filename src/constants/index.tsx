@@ -169,30 +169,38 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const skills = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title:
+      "Technical Services",
+    description: 
+      "Technical Expertise in Software Development, System Design, and Agile Methodologies",
+    subDescription1: 
+      "Experience in software development principles focused on creating manageable and scalable solutions.",
+    subDescription2: 
+      "Understanding of system design, data structures, and methodologies within agile development teams (e.g., Scrum).",
+    subDescription3: 
+      "Engage in code reviews, both providing and receiving critical technical feedback.",
+    subDescription4: 
+      "Understanding customers' challenges and formulating technical solutions in a clear and simple way.",
+    subDescription5: 
+      "Understanding of Windows OS family, software deployment, and OOP principles.",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title:
+      "Professional and Interpersonal Services",
+    description: 
+      "Strong Interpersonal and Professional Skills for Effective Collaboration, Communication, and Results-Driven Performance.",
+    subDescription1: 
+      "Excellent teamwork abilities and a proven track record of fostering a positive work environment to achieve shared goals.",
+    subDescription2: 
+      "Attention to detail, a passion for skill improvement, responsibility and punctuality.",
+    subDescription3: 
+      "Strong ability to work independently, plan, and drive the work forward to achieve results in a pragmatic manner.",
+    subDescription4: 
+      "Strong communication skills and can explain technical solutions to both technical and non-technical audiences.",
+    subDescription5: 
+      "Fluent in Swedish and English, both verbally and in writing.",
   },
 ];
 
@@ -262,4 +270,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, skills, projects };

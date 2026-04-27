@@ -7,5 +7,5 @@ export const Feedbacks: ComponentType<any>;
 export const Hero: ComponentType<any>;
 export const Navbar: ComponentType<any>;
 export const Tech: ComponentType<any>;
-export const Works: ComponentType<any>;
+export const Skills: ComponentType<any>;
 export const StarsCanvas: ComponentType<any>;

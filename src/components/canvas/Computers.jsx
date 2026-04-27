@@ -79,7 +79,6 @@ const ComputersCanvas = () => {
       </Suspense>
       <Preload all />
     </Canvas>
-
   )
 }
 
