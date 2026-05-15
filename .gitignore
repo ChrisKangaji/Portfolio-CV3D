@@ -30,3 +30,4 @@ obj
 .firebase
 .firebaserc
 build
+package-lock.json
