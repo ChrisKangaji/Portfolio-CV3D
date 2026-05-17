@@ -84,7 +84,7 @@ const Hero = () => {
         </div>
 
         {/* Background image */}
-        <div className="home__img"></div>
+        {/* <div className="home__img"></div> */}
 
         {/* Typing effect and text */}
         <div>
